@@ -13,10 +13,7 @@ attr_accessor :name, :yrs_exp
     @@all
   end
 
-  # OBJECT RELATIONSHIPS - #new_meal, #meals, #best_tippers
-
-  # Initialize a meal using the current Waiter instance, 
-    # a provided Customer instance and a total and tip
+ 
   def new_meal(customer, total, tip=0)
     Meal.new(self, customer, total, tip)
   end
