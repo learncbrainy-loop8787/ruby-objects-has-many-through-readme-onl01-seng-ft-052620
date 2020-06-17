@@ -18,7 +18,6 @@ attr_accessor :name, :yrs_exp
     Meal.new(self, customer, total, tip)
   end
 
-  # Returns an Array of Meal instances associated with this waiter
   def meals
     Meal.all.select do |meal|
       meal.waiter == self
